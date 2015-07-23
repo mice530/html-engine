@@ -1,5 +1,5 @@
 # html-engine
-An html middleware between browser and web-backend.
+An html middleware between browser and web-backend (lab and unstable).
 
 # Usage
 1. `npm install html-hengine`
