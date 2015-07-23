@@ -1,0 +1,9 @@
+{
+  // set the root of the template
+  "templateRoot": "views",
+  // default 11506
+  "port": "11506",
+  "backendHost": "http://localhost:11507",
+  "extName": ".html",
+  "templateConfig": "conf/template/**/*.json"
+}

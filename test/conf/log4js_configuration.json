@@ -1,0 +1,18 @@
+{
+    "appenders": [
+        {
+            "type": "file",
+            "filename": "./logs/fe/html-engine/logger_11506.log",
+            "maxLogSize": 512000000,
+            "backups": 10,
+            "category": "log"
+        },
+        {
+            "type": "file",
+            "filename": "./logs/fe/html-engine/error_11506.log",
+            "maxLogSize": 512000000,
+            "backups": 10,
+            "category": "error"
+        }
+    ]
+}
