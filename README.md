@@ -2,7 +2,7 @@
 An html middleware between browser and web-backend.
 
 # Usage
-1. `cnpm install @froad/html-hengine`
+1. `npm install html-hengine`
 
 # HTML Engine 设计文档
 -------------
@@ -56,6 +56,7 @@ An html middleware between browser and web-backend.
 
 ## more
 更多前后端分离背景。
+
 1. [Nicholas Zakas: nodejs and new web front end](http://www.nczonline.net/blog/2013/10/07/node-js-and-the-new-web-front-end/)
 2. [美团全栈之路](http://mp.weixin.qq.com/s?__biz=MzAxNjAzMTQyMA==&mid=207597914&idx=1&sn=3496b37d4f080accaea18e96afef0dec&scene=5#rd)
 
