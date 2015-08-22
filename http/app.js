@@ -18,6 +18,8 @@ module.exports = function(app, options) {
         log = require('../lib/log'),
         koa_router = require('./router');
 
+    // override error handler
+    app.onerror = require('./onerror');
 
     log.info('[%s] server started, listening to %s', filename, config.port);
 
