@@ -4,11 +4,11 @@
 
 
 
-var app = require('./http/app'),
+var httpApp = require('./http/app'),
     config = require('./conf/config'),
     log4jsConfig = require('./conf/log4js_configuration');
 
-exports = module.exports = function(options) {
+exports = module.exports = function(app, options) {
 
     // init conf/config
     if(options && options.config) {
@@ -20,7 +20,7 @@ exports = module.exports = function(options) {
         log4jsConfig.init(options.log4jsConfig);
     }
 
-    app(options);
+    return httpApp(app, options);
 };
 
 /*

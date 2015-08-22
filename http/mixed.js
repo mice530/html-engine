@@ -2,14 +2,14 @@
  * Created by patrickliu on 15/6/24.
  */
 var log = require('../lib/log'),
-    Emitter = require('../lib/EventEmitter'),
     path = require('path');
 
 var filename = path.basename(__filename);
 
 var mixed = function* (next) {
     var request = this.request,
-        response = this.response;
+        response = this.response,
+        app = this.app;
 
     var templateContent = request.templateContent,
         userData = request.userData;
@@ -28,7 +28,7 @@ var mixed = function* (next) {
             });
             */
 
-            Emitter.emit('no_template');
+            app.emit('no_template');
 
             log.error('[%s] templateContent is %s', filename, typeof templateContent);
         }
@@ -44,7 +44,7 @@ var mixed = function* (next) {
             });
             */
 
-            Emitter.emit('no_data');
+            app.emit('no_data');
 
             log.error('[%s] userData is %s', filename, typeof userData);
         }
@@ -76,7 +76,7 @@ var mixed = function* (next) {
         });
         */
 
-        Emitter.emit('mixed_error');
+        app.emit('mixed_error');
 
         log.error('[%s] template error with %s', filename, e.message);
         this.throw(500, 'template error ' + e.message);

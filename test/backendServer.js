@@ -5,6 +5,7 @@ var koa = require('koa'),
 app.use(function* (next) {
     var req = this.request;
     console.log(req.path);
+    console.log(req.header);
     this.body = { "success": true };
 });
 

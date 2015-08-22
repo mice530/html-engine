@@ -1,6 +1,6 @@
 {
-  "name": "html-engine",
-  "version": "1.0.1",
+  "name": "@froad/html-engine",
+  "version": "1.0.35",
   "description": "An html middleware between browser and web-backend.",
   "main": "index.js",
   "scripts": {
